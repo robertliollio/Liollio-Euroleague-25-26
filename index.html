@@ -63,6 +63,7 @@ tr:hover .tname{opacity:.75}
 .win{color:var(--win);font-weight:600;font-family:'DM Mono',monospace}
 .loss{color:var(--loss);font-weight:600;font-family:'DM Mono',monospace}
 .sch{color:var(--mu);font-style:italic}
+.opp-link{color:var(--acc);cursor:pointer;transition:opacity .15s}.opp-link:hover{opacity:.7}
 .schtbl tbody tr:hover td{background:rgba(255,255,255,.03)}
 .ts{color:var(--mu);font-size:11px;margin-top:20px;text-align:right;font-family:'DM Mono',monospace}
 @media(max-width:860px){.lay{grid-template-columns:1fr}main{padding:20px 16px}header{padding:14px 16px}}
@@ -248,7 +249,7 @@ tr:hover .tname{opacity:.75}
           <td class="num">65.1</td><td class="num rp">12</td>
         </tr></tbody>
     </table></div>
-    <p class="ts">Updated 11 Mar 2026 15:09</p>
+    <p class="ts">Updated 11 Mar 2026 15:45</p>
   </div>
   <div class="tp" id="team-Olympiacos-Piraeus" style="display:none">
       <button class="back" onclick="showRanking()">← Rankings</button>
@@ -266,123 +267,123 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">30 Sep 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">30 Sep 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 102-96</td>
           <td class="mu">Away</td><td class="num">1-0</td>
         </tr><tr>
-          <td class="dc">02 Oct 2025</td><td>Real Madrid</td>
+          <td class="dc">02 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 77-89</td>
           <td class="mu">Away</td><td class="num">1-1</td>
         </tr><tr>
-          <td class="dc">10 Oct 2025</td><td>Dubai Basketball</td>
+          <td class="dc">10 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 86-67</td>
           <td class="mu">Home</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="loss num">L 78-82</td>
           <td class="mu">Home</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">16 Oct 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">16 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 95-94</td>
           <td class="mu">Away</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">24 Oct 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">24 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 96-71</td>
           <td class="mu">Away</td><td class="num">4-2</td>
         </tr><tr>
-          <td class="dc">29 Oct 2025</td><td>AS Monaco</td>
+          <td class="dc">29 Oct 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 87-92</td>
           <td class="mu">Home</td><td class="num">4-3</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">31 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 62-58</td>
           <td class="mu">Home</td><td class="num">5-3</td>
         </tr><tr>
-          <td class="dc">07 Nov 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">07 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 80-71</td>
           <td class="mu">Home</td><td class="num">6-3</td>
         </tr><tr>
-          <td class="dc">12 Nov 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">12 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 95-78</td>
           <td class="mu">Home</td><td class="num">7-3</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 87-88</td>
           <td class="mu">Away</td><td class="num">7-4</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Paris Basketball</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 98-86</td>
           <td class="mu">Home</td><td class="num">8-4</td>
         </tr><tr>
-          <td class="dc">26 Nov 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">26 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 80-91</td>
           <td class="mu">Away</td><td class="num">8-5</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>FC Barcelona</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 85-98</td>
           <td class="mu">Away</td><td class="num">8-6</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Valencia Basket</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 92-99</td>
           <td class="mu">Home</td><td class="num">8-7</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 107-84</td>
           <td class="mu">Home</td><td class="num">9-7</td>
         </tr><tr>
-          <td class="dc">26 Dec 2025</td><td>Virtus Bologna</td>
+          <td class="dc">26 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 97-94</td>
           <td class="mu">Away</td><td class="num">10-7</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 87-82</td>
           <td class="mu">Away</td><td class="num">11-7</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 80-88</td>
           <td class="mu">Away</td><td class="num">11-8</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 95-80</td>
           <td class="mu">Home</td><td class="num">12-8</td>
         </tr><tr>
-          <td class="dc">14 Jan 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">14 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 104-66</td>
           <td class="mu">Away</td><td class="num">13-8</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 100-93</td>
           <td class="mu">Home</td><td class="num">14-8</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 74-68</td>
           <td class="mu">Away</td><td class="num">15-8</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>FC Barcelona</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 87-75</td>
           <td class="mu">Home</td><td class="num">16-8</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Dubai Basketball</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 98-108</td>
           <td class="mu">Away</td><td class="num">16-9</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>Virtus Bologna</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 109-77</td>
           <td class="mu">Home</td><td class="num">17-9</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 92-86</td>
           <td class="mu">Home</td><td class="num">18-9</td>
         </tr><tr>
-          <td class="dc">25 Feb 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">25 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 94-99</td>
           <td class="mu">Away</td><td class="num">18-10</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">06 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 86-80</td>
           <td class="mu">Home</td><td class="num">19-10</td>
         </tr><tr>
-          <td class="dc">10 Mar 2026</td><td>Paris Basketball</td>
+          <td class="dc">10 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 104-87</td>
           <td class="mu">Away</td><td class="num">20-10</td>
         </tr></tbody>
@@ -406,115 +407,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 86-84</td>
           <td class="mu">Away</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 91-85</td>
           <td class="mu">Home</td><td class="num">3-1</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 95-81</td>
           <td class="mu">Away</td><td class="num">4-1</td>
         </tr><tr>
-          <td class="dc">24 Oct 2025</td><td>Virtus Bologna</td>
+          <td class="dc">24 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 75-92</td>
           <td class="mu">Away</td><td class="num">4-2</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 99-85</td>
           <td class="mu">Home</td><td class="num">5-2</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td>AS Monaco</td>
+          <td class="dc">31 Oct 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 84-92</td>
           <td class="mu">Away</td><td class="num">5-3</td>
         </tr><tr>
-          <td class="dc">05 Nov 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">05 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 68-86</td>
           <td class="mu">Away</td><td class="num">5-4</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Paris Basketball</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 101-95</td>
           <td class="mu">Away</td><td class="num">6-4</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Real Madrid</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 87-77</td>
           <td class="mu">Away</td><td class="num">7-4</td>
         </tr><tr>
-          <td class="dc">20 Nov 2025</td><td>Dubai Basketball</td>
+          <td class="dc">20 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 103-82</td>
           <td class="mu">Home</td><td class="num">8-4</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 91-69</td>
           <td class="mu">Home</td><td class="num">9-4</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td>Valencia Basket</td>
+          <td class="dc">05 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 79-89</td>
           <td class="mu">Home</td><td class="num">9-5</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 89-96</td>
           <td class="mu">Away</td><td class="num">9-6</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="win num">W 81-77</td>
           <td class="mu">Away</td><td class="num">10-6</td>
         </tr><tr>
-          <td class="dc">18 Dec 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">18 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 93-82</td>
           <td class="mu">Home</td><td class="num">11-6</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 92-85</td>
           <td class="mu">Away</td><td class="num">12-6</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 82-87</td>
           <td class="mu">Home</td><td class="num">12-7</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 74-87</td>
           <td class="mu">Home</td><td class="num">12-8</td>
         </tr><tr>
-          <td class="dc">08 Jan 2026</td><td>Virtus Bologna</td>
+          <td class="dc">08 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 84-71</td>
           <td class="mu">Home</td><td class="num">13-8</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 78-85</td>
           <td class="mu">Away</td><td class="num">13-9</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 93-74</td>
           <td class="mu">Home</td><td class="num">14-9</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 71-75</td>
           <td class="mu">Away</td><td class="num">14-10</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">30 Jan 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 79-78</td>
           <td class="mu">Away</td><td class="num">15-10</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Real Madrid</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 82-81</td>
           <td class="mu">Home</td><td class="num">16-10</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="loss num">L 62-78</td>
           <td class="mu">Away</td><td class="num">16-11</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 83-85</td>
           <td class="mu">Home</td><td class="num">16-12</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>Paris Basketball</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 99-104</td>
           <td class="mu">Home</td><td class="num">16-13</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">06 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 80-86</td>
           <td class="mu">Away</td><td class="num">16-14</td>
         </tr></tbody>
@@ -538,115 +539,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">10 Oct 2025</td><td>FC Barcelona</td>
+          <td class="dc">10 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 102-108</td>
           <td class="mu">Away</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 93-100</td>
           <td class="mu">Home</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>AS Monaco</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 84-90</td>
           <td class="mu">Away</td><td class="num">2-3</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 103-100</td>
           <td class="mu">Away</td><td class="num">3-3</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="win num">W 94-79</td>
           <td class="mu">Home</td><td class="num">4-3</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Dubai Basketball</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 80-78</td>
           <td class="mu">Home</td><td class="num">5-3</td>
         </tr><tr>
-          <td class="dc">07 Nov 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">07 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 77-86</td>
           <td class="mu">Away</td><td class="num">5-4</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Real Madrid</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 89-76</td>
           <td class="mu">Home</td><td class="num">6-4</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Paris Basketball</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 86-90</td>
           <td class="mu">Away</td><td class="num">6-5</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 76-73</td>
           <td class="mu">Home</td><td class="num">7-5</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 90-64</td>
           <td class="mu">Home</td><td class="num">8-5</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">05 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 89-79</td>
           <td class="mu">Away</td><td class="num">9-5</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 94-82</td>
           <td class="mu">Home</td><td class="num">10-5</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 99-92</td>
           <td class="mu">Away</td><td class="num">11-5</td>
         </tr><tr>
-          <td class="dc">18 Dec 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">18 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 82-85</td>
           <td class="mu">Away</td><td class="num">11-6</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 91-81</td>
           <td class="mu">Home</td><td class="num">12-6</td>
         </tr><tr>
-          <td class="dc">30 Dec 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">30 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 86-73</td>
           <td class="mu">Home</td><td class="num">13-6</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 106-89</td>
           <td class="mu">Away</td><td class="num">14-6</td>
         </tr><tr>
-          <td class="dc">08 Jan 2026</td><td>AS Monaco</td>
+          <td class="dc">08 Jan 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 92-101</td>
           <td class="mu">Home</td><td class="num">14-7</td>
         </tr><tr>
-          <td class="dc">16 Jan 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">16 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 79-82</td>
           <td class="mu">Away</td><td class="num">14-8</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Paris Basketball</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 98-84</td>
           <td class="mu">Home</td><td class="num">15-8</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 89-93</td>
           <td class="mu">Away</td><td class="num">15-9</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 94-83</td>
           <td class="mu">Home</td><td class="num">16-9</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="loss num">L 90-107</td>
           <td class="mu">Away</td><td class="num">16-10</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 104-99</td>
           <td class="mu">Away</td><td class="num">17-10</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 82-67</td>
           <td class="mu">Home</td><td class="num">18-10</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 108-79</td>
           <td class="mu">Away</td><td class="num">19-10</td>
         </tr><tr>
-          <td class="dc">05 Mar 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">05 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 91-87</td>
           <td class="mu">Home</td><td class="num">20-10</td>
         </tr></tbody>
@@ -670,111 +671,111 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">10 Oct 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">10 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 81-86</td>
           <td class="mu">Home</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>Dubai Basketball</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 69-93</td>
           <td class="mu">Home</td><td class="num">1-3</td>
         </tr><tr>
-          <td class="dc">16 Oct 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">16 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 88-73</td>
           <td class="mu">Home</td><td class="num">2-3</td>
         </tr><tr>
-          <td class="dc">24 Oct 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">24 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 79-69</td>
           <td class="mu">Away</td><td class="num">3-3</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Valencia Basket</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 79-94</td>
           <td class="mu">Away</td><td class="num">3-4</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Real Madrid</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 58-84</td>
           <td class="mu">Away</td><td class="num">3-5</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 81-67</td>
           <td class="mu">Home</td><td class="num">4-5</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 84-75</td>
           <td class="mu">Home</td><td class="num">5-5</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 74-68</td>
           <td class="mu">Home</td><td class="num">6-5</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 99-87</td>
           <td class="mu">Away</td><td class="num">7-5</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Virtus Bologna</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 66-64</td>
           <td class="mu">Home</td><td class="num">8-5</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>AS Monaco</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 92-86</td>
           <td class="mu">Away</td><td class="num">9-5</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 77-81</td>
           <td class="mu">Home</td><td class="num">9-6</td>
         </tr><tr>
-          <td class="dc">18 Dec 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">18 Dec 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 87-72</td>
           <td class="mu">Away</td><td class="num">10-6</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>FC Barcelona</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 72-71</td>
           <td class="mu">Home</td><td class="num">11-6</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 108-93</td>
           <td class="mu">Away</td><td class="num">12-6</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 88-80</td>
           <td class="mu">Home</td><td class="num">13-6</td>
         </tr><tr>
-          <td class="dc">08 Jan 2026</td><td>Dubai Basketball</td>
+          <td class="dc">08 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 81-92</td>
           <td class="mu">Away</td><td class="num">13-7</td>
         </tr><tr>
-          <td class="dc">16 Jan 2026</td><td>Valencia Basket</td>
+          <td class="dc">16 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 82-79</td>
           <td class="mu">Home</td><td class="num">14-7</td>
         </tr><tr>
-          <td class="dc">21 Jan 2026</td><td>Virtus Bologna</td>
+          <td class="dc">21 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 85-80</td>
           <td class="mu">Away</td><td class="num">15-7</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">23 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 84-71</td>
           <td class="mu">Home</td><td class="num">16-7</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 79-62</td>
           <td class="mu">Home</td><td class="num">17-7</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>FC Barcelona</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 82-78</td>
           <td class="mu">Away</td><td class="num">18-7</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>Paris Basketball</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 92-90</td>
           <td class="mu">Away</td><td class="num">19-7</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 85-83</td>
           <td class="mu">Away</td><td class="num">20-7</td>
         </tr><tr>
-          <td class="dc">25 Feb 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">25 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 81-78</td>
           <td class="mu">Home</td><td class="num">21-7</td>
         </tr><tr>
-          <td class="dc">05 Mar 2026</td><td>AS Monaco</td>
+          <td class="dc">05 Mar 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 88-70</td>
           <td class="mu">Home</td><td class="num">22-7</td>
         </tr></tbody>
@@ -798,115 +799,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 85-72</td>
           <td class="mu">Home</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 93-86</td>
           <td class="mu">Home</td><td class="num">3-1</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 75-90</td>
           <td class="mu">Away</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">22 Oct 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">22 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 91-92</td>
           <td class="mu">Away</td><td class="num">3-3</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 84-90</td>
           <td class="mu">Away</td><td class="num">3-4</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="win num">W 84-58</td>
           <td class="mu">Home</td><td class="num">4-4</td>
         </tr><tr>
-          <td class="dc">07 Nov 2025</td><td>FC Barcelona</td>
+          <td class="dc">07 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 101-92</td>
           <td class="mu">Away</td><td class="num">5-4</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Valencia Basket</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 76-89</td>
           <td class="mu">Away</td><td class="num">5-5</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 77-87</td>
           <td class="mu">Home</td><td class="num">5-6</td>
         </tr><tr>
-          <td class="dc">20 Nov 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">20 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 100-99</td>
           <td class="mu">Home</td><td class="num">6-6</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 75-74</td>
           <td class="mu">Away</td><td class="num">7-6</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 81-75</td>
           <td class="mu">Away</td><td class="num">8-6</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 94-87</td>
           <td class="mu">Home</td><td class="num">9-6</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 82-89</td>
           <td class="mu">Away</td><td class="num">9-7</td>
         </tr><tr>
-          <td class="dc">18 Dec 2025</td><td>Paris Basketball</td>
+          <td class="dc">18 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 95-90</td>
           <td class="mu">Home</td><td class="num">10-7</td>
         </tr><tr>
-          <td class="dc">26 Dec 2025</td><td>AS Monaco</td>
+          <td class="dc">26 Dec 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 95-100</td>
           <td class="mu">Away</td><td class="num">10-8</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Dubai Basketball</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 107-93</td>
           <td class="mu">Home</td><td class="num">11-8</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 80-69</td>
           <td class="mu">Away</td><td class="num">12-8</td>
         </tr><tr>
-          <td class="dc">08 Jan 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">08 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 98-86</td>
           <td class="mu">Home</td><td class="num">13-8</td>
         </tr><tr>
-          <td class="dc">16 Jan 2026</td><td>FC Barcelona</td>
+          <td class="dc">16 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 80-61</td>
           <td class="mu">Home</td><td class="num">14-8</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 106-77</td>
           <td class="mu">Home</td><td class="num">15-8</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>AS Monaco</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 90-78</td>
           <td class="mu">Home</td><td class="num">16-8</td>
         </tr><tr>
-          <td class="dc">27 Jan 2026</td><td>Paris Basketball</td>
+          <td class="dc">27 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 92-98</td>
           <td class="mu">Away</td><td class="num">16-9</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 81-82</td>
           <td class="mu">Away</td><td class="num">16-10</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>Dubai Basketball</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 85-93</td>
           <td class="mu">Away</td><td class="num">16-11</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 77-73</td>
           <td class="mu">Away</td><td class="num">17-11</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 93-70</td>
           <td class="mu">Home</td><td class="num">18-11</td>
         </tr><tr>
-          <td class="dc">05 Mar 2026</td><td>Virtus Bologna</td>
+          <td class="dc">05 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 92-84</td>
           <td class="mu">Home</td><td class="num">19-11</td>
         </tr></tbody>
@@ -930,115 +931,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>Real Madrid</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 72-85</td>
           <td class="mu">Away</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 85-91</td>
           <td class="mu">Away</td><td class="num">1-3</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Virtus Bologna</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 83-90</td>
           <td class="mu">Home</td><td class="num">1-4</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>Dubai Basketball</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 85-79</td>
           <td class="mu">Home</td><td class="num">2-4</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 65-79</td>
           <td class="mu">Away</td><td class="num">2-5</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 59-96</td>
           <td class="mu">Away</td><td class="num">2-6</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 67-81</td>
           <td class="mu">Away</td><td class="num">2-7</td>
         </tr><tr>
-          <td class="dc">12 Nov 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">12 Nov 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 72-80</td>
           <td class="mu">Away</td><td class="num">2-8</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 88-87</td>
           <td class="mu">Home</td><td class="num">3-8</td>
         </tr><tr>
-          <td class="dc">19 Nov 2025</td><td>AS Monaco</td>
+          <td class="dc">19 Nov 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 52-84</td>
           <td class="mu">Home</td><td class="num">3-9</td>
         </tr><tr>
-          <td class="dc">26 Nov 2025</td><td>FC Barcelona</td>
+          <td class="dc">26 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 78-88</td>
           <td class="mu">Away</td><td class="num">3-10</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 80-87</td>
           <td class="mu">Away</td><td class="num">3-11</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 84-92</td>
           <td class="mu">Away</td><td class="num">3-12</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">17 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 76-74</td>
           <td class="mu">Home</td><td class="num">4-12</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 84-107</td>
           <td class="mu">Away</td><td class="num">4-13</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 103-99</td>
           <td class="mu">Home</td><td class="num">5-13</td>
         </tr><tr>
-          <td class="dc">30 Dec 2025</td><td>Paris Basketball</td>
+          <td class="dc">30 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 94-89</td>
           <td class="mu">Home</td><td class="num">6-13</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Real Madrid</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 69-80</td>
           <td class="mu">Home</td><td class="num">6-14</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 73-78</td>
           <td class="mu">Away</td><td class="num">6-15</td>
         </tr><tr>
-          <td class="dc">16 Jan 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">16 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 73-81</td>
           <td class="mu">Home</td><td class="num">6-16</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 77-96</td>
           <td class="mu">Home</td><td class="num">6-17</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td>FC Barcelona</td>
+          <td class="dc">23 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 91-98</td>
           <td class="mu">Home</td><td class="num">6-18</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">30 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 78-79</td>
           <td class="mu">Home</td><td class="num">6-19</td>
         </tr><tr>
-          <td class="dc">04 Feb 2026</td><td>Virtus Bologna</td>
+          <td class="dc">04 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 80-70</td>
           <td class="mu">Away</td><td class="num">7-19</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 76-77</td>
           <td class="mu">Home</td><td class="num">7-20</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>Valencia Basket</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 67-82</td>
           <td class="mu">Away</td><td class="num">7-21</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>Dubai Basketball</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 85-96</td>
           <td class="mu">Away</td><td class="num">7-22</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">06 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 91-88</td>
           <td class="mu">Away</td><td class="num">8-22</td>
         </tr></tbody>
@@ -1062,115 +1063,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">10 Oct 2025</td><td>Valencia Basket</td>
+          <td class="dc">10 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 108-102</td>
           <td class="mu">Home</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 92-71</td>
           <td class="mu">Away</td><td class="num">3-1</td>
         </tr><tr>
-          <td class="dc">16 Oct 2025</td><td>Dubai Basketball</td>
+          <td class="dc">16 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 78-83</td>
           <td class="mu">Away</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 73-88</td>
           <td class="mu">Home</td><td class="num">3-3</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 74-72</td>
           <td class="mu">Home</td><td class="num">4-3</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">31 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 78-76</td>
           <td class="mu">Away</td><td class="num">5-3</td>
         </tr><tr>
-          <td class="dc">07 Nov 2025</td><td>Real Madrid</td>
+          <td class="dc">07 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 92-101</td>
           <td class="mu">Home</td><td class="num">5-4</td>
         </tr><tr>
-          <td class="dc">12 Nov 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">12 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 75-74</td>
           <td class="mu">Away</td><td class="num">6-4</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>Virtus Bologna</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 88-81</td>
           <td class="mu">Home</td><td class="num">7-4</td>
         </tr><tr>
-          <td class="dc">20 Nov 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">20 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="loss num">L 73-74</td>
           <td class="mu">Away</td><td class="num">7-5</td>
         </tr><tr>
-          <td class="dc">26 Nov 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">26 Nov 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 88-78</td>
           <td class="mu">Home</td><td class="num">8-5</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">05 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 89-79</td>
           <td class="mu">Away</td><td class="num">9-5</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 98-85</td>
           <td class="mu">Home</td><td class="num">10-5</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Paris Basketball</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 85-69</td>
           <td class="mu">Away</td><td class="num">11-5</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 134-124</td>
           <td class="mu">Home</td><td class="num">12-5</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 71-72</td>
           <td class="mu">Away</td><td class="num">12-6</td>
         </tr><tr>
-          <td class="dc">30 Dec 2025</td><td>AS Monaco</td>
+          <td class="dc">30 Dec 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 74-90</td>
           <td class="mu">Home</td><td class="num">12-7</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 93-83</td>
           <td class="mu">Home</td><td class="num">13-7</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 88-70</td>
           <td class="mu">Home</td><td class="num">14-7</td>
         </tr><tr>
-          <td class="dc">16 Jan 2026</td><td>Real Madrid</td>
+          <td class="dc">16 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 61-80</td>
           <td class="mu">Away</td><td class="num">14-8</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Dubai Basketball</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 91-89</td>
           <td class="mu">Home</td><td class="num">15-8</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">23 Jan 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 98-91</td>
           <td class="mu">Away</td><td class="num">16-8</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 75-87</td>
           <td class="mu">Away</td><td class="num">16-9</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 78-82</td>
           <td class="mu">Home</td><td class="num">16-10</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 97-91</td>
           <td class="mu">Away</td><td class="num">17-10</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>Paris Basketball</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 74-85</td>
           <td class="mu">Home</td><td class="num">17-11</td>
         </tr><tr>
-          <td class="dc">25 Feb 2026</td><td>Virtus Bologna</td>
+          <td class="dc">25 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 80-85</td>
           <td class="mu">Away</td><td class="num">17-12</td>
         </tr><tr>
-          <td class="dc">05 Mar 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">05 Mar 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 84-87</td>
           <td class="mu">Away</td><td class="num">17-13</td>
         </tr></tbody>
@@ -1194,115 +1195,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">10 Oct 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">10 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 70-98</td>
           <td class="mu">Home</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 64-53</td>
           <td class="mu">Home</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">16 Oct 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">16 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 73-88</td>
           <td class="mu">Away</td><td class="num">2-3</td>
         </tr><tr>
-          <td class="dc">24 Oct 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">24 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 71-96</td>
           <td class="mu">Home</td><td class="num">2-4</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Real Madrid</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 90-84</td>
           <td class="mu">Home</td><td class="num">3-4</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Virtus Bologna</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 86-70</td>
           <td class="mu">Home</td><td class="num">4-4</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>Paris Basketball</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 86-82</td>
           <td class="mu">Away</td><td class="num">5-4</td>
         </tr><tr>
-          <td class="dc">12 Nov 2025</td><td>FC Barcelona</td>
+          <td class="dc">12 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 74-75</td>
           <td class="mu">Home</td><td class="num">5-5</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="loss num">L 72-74</td>
           <td class="mu">Away</td><td class="num">5-6</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 73-95</td>
           <td class="mu">Away</td><td class="num">5-7</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Valencia Basket</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 64-90</td>
           <td class="mu">Away</td><td class="num">5-8</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="loss num">L 85-92</td>
           <td class="mu">Away</td><td class="num">5-9</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>Dubai Basketball</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 88-89</td>
           <td class="mu">Away</td><td class="num">5-10</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">17 Dec 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="loss num">L 74-76</td>
           <td class="mu">Away</td><td class="num">5-11</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>AS Monaco</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 77-103</td>
           <td class="mu">Away</td><td class="num">5-12</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 72-82</td>
           <td class="mu">Home</td><td class="num">5-13</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 95-71</td>
           <td class="mu">Home</td><td class="num">6-13</td>
         </tr><tr>
-          <td class="dc">07 Jan 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">07 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 96-89</td>
           <td class="mu">Home</td><td class="num">7-13</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 80-95</td>
           <td class="mu">Away</td><td class="num">7-14</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 85-78</td>
           <td class="mu">Home</td><td class="num">8-14</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="loss num">L 63-67</td>
           <td class="mu">Home</td><td class="num">8-15</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Valencia Basket</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 93-89</td>
           <td class="mu">Home</td><td class="num">9-15</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 79-64</td>
           <td class="mu">Away</td><td class="num">10-15</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Paris Basketball</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 81-75</td>
           <td class="mu">Home</td><td class="num">11-15</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>AS Monaco</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 91-82</td>
           <td class="mu">Home</td><td class="num">12-15</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 106-111</td>
           <td class="mu">Away</td><td class="num">12-16</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>Real Madrid</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 70-93</td>
           <td class="mu">Away</td><td class="num">12-17</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">06 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 85-80</td>
           <td class="mu">Away</td><td class="num">13-17</td>
         </tr></tbody>
@@ -1326,115 +1327,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="loss num">L 87-93</td>
           <td class="mu">Away</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 82-78</td>
           <td class="mu">Away</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 81-95</td>
           <td class="mu">Home</td><td class="num">2-3</td>
         </tr><tr>
-          <td class="dc">24 Oct 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">24 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 69-79</td>
           <td class="mu">Home</td><td class="num">2-4</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Paris Basketball</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 90-80</td>
           <td class="mu">Away</td><td class="num">3-4</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">31 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 75-86</td>
           <td class="mu">Away</td><td class="num">3-5</td>
         </tr><tr>
-          <td class="dc">07 Nov 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">07 Nov 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 93-97</td>
           <td class="mu">Home</td><td class="num">3-6</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Virtus Bologna</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 89-99</td>
           <td class="mu">Away</td><td class="num">3-7</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 74-72</td>
           <td class="mu">Home</td><td class="num">4-7</td>
         </tr><tr>
-          <td class="dc">20 Nov 2025</td><td>FC Barcelona</td>
+          <td class="dc">20 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 74-73</td>
           <td class="mu">Home</td><td class="num">5-7</td>
         </tr><tr>
-          <td class="dc">26 Nov 2025</td><td>AS Monaco</td>
+          <td class="dc">26 Nov 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 66-102</td>
           <td class="mu">Away</td><td class="num">5-8</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>Real Madrid</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 75-81</td>
           <td class="mu">Home</td><td class="num">5-9</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>Valencia Basket</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 82-94</td>
           <td class="mu">Away</td><td class="num">5-10</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">17 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 87-64</td>
           <td class="mu">Away</td><td class="num">6-10</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>Dubai Basketball</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 76-80</td>
           <td class="mu">Home</td><td class="num">6-11</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="loss num">L 99-103</td>
           <td class="mu">Away</td><td class="num">6-12</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 65-87</td>
           <td class="mu">Home</td><td class="num">6-13</td>
         </tr><tr>
-          <td class="dc">07 Jan 2026</td><td>Paris Basketball</td>
+          <td class="dc">07 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 79-84</td>
           <td class="mu">Home</td><td class="num">6-14</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 74-87</td>
           <td class="mu">Away</td><td class="num">6-15</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 75-89</td>
           <td class="mu">Home</td><td class="num">6-16</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 66-71</td>
           <td class="mu">Away</td><td class="num">6-17</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 68-74</td>
           <td class="mu">Home</td><td class="num">6-18</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 62-79</td>
           <td class="mu">Away</td><td class="num">6-19</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Valencia Basket</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 107-90</td>
           <td class="mu">Home</td><td class="num">7-19</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 92-82</td>
           <td class="mu">Home</td><td class="num">8-19</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>Virtus Bologna</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 91-60</td>
           <td class="mu">Home</td><td class="num">9-19</td>
         </tr><tr>
-          <td class="dc">25 Feb 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">25 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 81-91</td>
           <td class="mu">Away</td><td class="num">9-20</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">06 Mar 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="loss num">L 88-91</td>
           <td class="mu">Home</td><td class="num">9-21</td>
         </tr></tbody>
@@ -1458,115 +1459,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>AS Monaco</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 79-82</td>
           <td class="mu">Home</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 53-64</td>
           <td class="mu">Away</td><td class="num">1-3</td>
         </tr><tr>
-          <td class="dc">16 Oct 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">16 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 89-78</td>
           <td class="mu">Away</td><td class="num">2-3</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>Valencia Basket</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 100-103</td>
           <td class="mu">Home</td><td class="num">2-4</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>FC Barcelona</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 72-74</td>
           <td class="mu">Away</td><td class="num">2-5</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Paris Basketball</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 86-77</td>
           <td class="mu">Home</td><td class="num">3-5</td>
         </tr><tr>
-          <td class="dc">07 Nov 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">07 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 97-93</td>
           <td class="mu">Away</td><td class="num">4-5</td>
         </tr><tr>
-          <td class="dc">12 Nov 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">12 Nov 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 80-72</td>
           <td class="mu">Home</td><td class="num">5-5</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 88-87</td>
           <td class="mu">Home</td><td class="num">6-5</td>
         </tr><tr>
-          <td class="dc">20 Nov 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">20 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 83-105</td>
           <td class="mu">Home</td><td class="num">6-6</td>
         </tr><tr>
-          <td class="dc">26 Nov 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">26 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 102-88</td>
           <td class="mu">Away</td><td class="num">7-6</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">05 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 78-88</td>
           <td class="mu">Away</td><td class="num">7-7</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 96-89</td>
           <td class="mu">Home</td><td class="num">8-7</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Real Madrid</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 89-82</td>
           <td class="mu">Home</td><td class="num">9-7</td>
         </tr><tr>
-          <td class="dc">18 Dec 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">18 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 72-87</td>
           <td class="mu">Home</td><td class="num">9-8</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Dubai Basketball</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 92-99</td>
           <td class="mu">Away</td><td class="num">9-9</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Virtus Bologna</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 85-97</td>
           <td class="mu">Away</td><td class="num">9-10</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 87-74</td>
           <td class="mu">Away</td><td class="num">10-10</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 87-74</td>
           <td class="mu">Home</td><td class="num">11-10</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 96-104</td>
           <td class="mu">Home</td><td class="num">11-11</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Real Madrid</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 77-106</td>
           <td class="mu">Away</td><td class="num">11-12</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 82-86</td>
           <td class="mu">Home</td><td class="num">11-13</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 85-79</td>
           <td class="mu">Home</td><td class="num">12-13</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 109-89</td>
           <td class="mu">Home</td><td class="num">13-13</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 77-76</td>
           <td class="mu">Away</td><td class="num">14-13</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>Dubai Basketball</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 78-96</td>
           <td class="mu">Home</td><td class="num">14-14</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 86-92</td>
           <td class="mu">Away</td><td class="num">14-15</td>
         </tr><tr>
-          <td class="dc">05 Mar 2026</td><td>FC Barcelona</td>
+          <td class="dc">05 Mar 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 87-84</td>
           <td class="mu">Home</td><td class="num">15-15</td>
         </tr></tbody>
@@ -1590,111 +1591,111 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">08 Oct 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">08 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 103-90</td>
           <td class="mu">Away</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>FC Barcelona</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 71-92</td>
           <td class="mu">Home</td><td class="num">1-3</td>
         </tr><tr>
-          <td class="dc">16 Oct 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">16 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 94-95</td>
           <td class="mu">Home</td><td class="num">1-4</td>
         </tr><tr>
-          <td class="dc">22 Oct 2025</td><td>Real Madrid</td>
+          <td class="dc">22 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 92-91</td>
           <td class="mu">Home</td><td class="num">2-4</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 85-99</td>
           <td class="mu">Away</td><td class="num">2-5</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 92-99</td>
           <td class="mu">Home</td><td class="num">2-6</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>AS Monaco</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 107-112</td>
           <td class="mu">Home</td><td class="num">2-7</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 75-84</td>
           <td class="mu">Away</td><td class="num">2-8</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 89-83</td>
           <td class="mu">Home</td><td class="num">3-8</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Virtus Bologna</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 89-99</td>
           <td class="mu">Away</td><td class="num">3-9</td>
         </tr><tr>
-          <td class="dc">26 Nov 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">26 Nov 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 88-102</td>
           <td class="mu">Home</td><td class="num">3-10</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 83-65</td>
           <td class="mu">Away</td><td class="num">4-10</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 92-84</td>
           <td class="mu">Home</td><td class="num">5-10</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Dubai Basketball</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 97-95</td>
           <td class="mu">Away</td><td class="num">6-10</td>
         </tr><tr>
-          <td class="dc">18 Dec 2025</td><td>Valencia Basket</td>
+          <td class="dc">18 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 85-82</td>
           <td class="mu">Home</td><td class="num">7-10</td>
         </tr><tr>
-          <td class="dc">26 Dec 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">26 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 112-87</td>
           <td class="mu">Away</td><td class="num">8-10</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 71-95</td>
           <td class="mu">Away</td><td class="num">8-11</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>FC Barcelona</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 83-93</td>
           <td class="mu">Away</td><td class="num">8-12</td>
         </tr><tr>
-          <td class="dc">08 Jan 2026</td><td>Real Madrid</td>
+          <td class="dc">08 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 86-98</td>
           <td class="mu">Away</td><td class="num">8-13</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 100-97</td>
           <td class="mu">Home</td><td class="num">9-13</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 93-100</td>
           <td class="mu">Away</td><td class="num">9-14</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 75-71</td>
           <td class="mu">Home</td><td class="num">10-14</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>Valencia Basket</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 83-94</td>
           <td class="mu">Away</td><td class="num">10-15</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 95-93</td>
           <td class="mu">Home</td><td class="num">11-15</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 83-82</td>
           <td class="mu">Away</td><td class="num">12-15</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 111-106</td>
           <td class="mu">Home</td><td class="num">13-15</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>AS Monaco</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 91-86</td>
           <td class="mu">Away</td><td class="num">14-15</td>
         </tr></tbody>
@@ -1718,115 +1719,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 82-79</td>
           <td class="mu">Away</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>Virtus Bologna</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 73-77</td>
           <td class="mu">Away</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Valencia Basket</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 90-84</td>
           <td class="mu">Home</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 77-85</td>
           <td class="mu">Away</td><td class="num">3-3</td>
         </tr><tr>
-          <td class="dc">29 Oct 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">29 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 92-87</td>
           <td class="mu">Away</td><td class="num">4-3</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">31 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 92-84</td>
           <td class="mu">Home</td><td class="num">5-3</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 112-107</td>
           <td class="mu">Away</td><td class="num">6-3</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="loss num">L 76-78</td>
           <td class="mu">Away</td><td class="num">6-4</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 79-91</td>
           <td class="mu">Away</td><td class="num">6-5</td>
         </tr><tr>
-          <td class="dc">19 Nov 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">19 Nov 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 84-52</td>
           <td class="mu">Away</td><td class="num">7-5</td>
         </tr><tr>
-          <td class="dc">26 Nov 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">26 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 102-66</td>
           <td class="mu">Home</td><td class="num">8-5</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>Paris Basketball</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 125-104</td>
           <td class="mu">Home</td><td class="num">9-5</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 86-92</td>
           <td class="mu">Home</td><td class="num">9-6</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">17 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 73-85</td>
           <td class="mu">Away</td><td class="num">9-7</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 103-77</td>
           <td class="mu">Home</td><td class="num">10-7</td>
         </tr><tr>
-          <td class="dc">26 Dec 2025</td><td>Real Madrid</td>
+          <td class="dc">26 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 100-95</td>
           <td class="mu">Home</td><td class="num">11-7</td>
         </tr><tr>
-          <td class="dc">30 Dec 2025</td><td>FC Barcelona</td>
+          <td class="dc">30 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 90-74</td>
           <td class="mu">Away</td><td class="num">12-7</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 101-84</td>
           <td class="mu">Home</td><td class="num">13-7</td>
         </tr><tr>
-          <td class="dc">08 Jan 2026</td><td>Valencia Basket</td>
+          <td class="dc">08 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 101-92</td>
           <td class="mu">Away</td><td class="num">14-7</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Paris Basketball</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 95-87</td>
           <td class="mu">Away</td><td class="num">15-7</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 96-100</td>
           <td class="mu">Home</td><td class="num">15-8</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Real Madrid</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 78-90</td>
           <td class="mu">Away</td><td class="num">15-9</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td>Virtus Bologna</td>
+          <td class="dc">30 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 82-84</td>
           <td class="mu">Home</td><td class="num">15-10</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 87-104</td>
           <td class="mu">Away</td><td class="num">15-11</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 82-91</td>
           <td class="mu">Away</td><td class="num">15-12</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 102-92</td>
           <td class="mu">Home</td><td class="num">16-12</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 86-91</td>
           <td class="mu">Home</td><td class="num">16-13</td>
         </tr><tr>
-          <td class="dc">05 Mar 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">05 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 70-88</td>
           <td class="mu">Away</td><td class="num">16-14</td>
         </tr></tbody>
@@ -1850,115 +1851,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">10 Oct 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">10 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="win num">W 86-81</td>
           <td class="mu">Away</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 88-79</td>
           <td class="mu">Home</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Real Madrid</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 90-75</td>
           <td class="mu">Home</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 90-72</td>
           <td class="mu">Home</td><td class="num">4-2</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 79-65</td>
           <td class="mu">Home</td><td class="num">5-2</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 99-92</td>
           <td class="mu">Away</td><td class="num">6-2</td>
         </tr><tr>
-          <td class="dc">05 Nov 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">05 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 86-68</td>
           <td class="mu">Home</td><td class="num">7-2</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Dubai Basketball</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 86-102</td>
           <td class="mu">Away</td><td class="num">7-3</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>AS Monaco</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 91-79</td>
           <td class="mu">Home</td><td class="num">8-3</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Valencia Basket</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 73-76</td>
           <td class="mu">Away</td><td class="num">8-4</td>
         </tr><tr>
-          <td class="dc">26 Nov 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">26 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 91-80</td>
           <td class="mu">Home</td><td class="num">9-4</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td>FC Barcelona</td>
+          <td class="dc">05 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 79-89</td>
           <td class="mu">Home</td><td class="num">9-5</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="loss num">L 76-79</td>
           <td class="mu">Away</td><td class="num">9-6</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 78-84</td>
           <td class="mu">Away</td><td class="num">9-7</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>Virtus Bologna</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 90-89</td>
           <td class="mu">Home</td><td class="num">10-7</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Paris Basketball</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 92-102</td>
           <td class="mu">Away</td><td class="num">10-8</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 87-65</td>
           <td class="mu">Away</td><td class="num">11-8</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Valencia Basket</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 89-106</td>
           <td class="mu">Home</td><td class="num">11-9</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 67-99</td>
           <td class="mu">Away</td><td class="num">11-10</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 104-96</td>
           <td class="mu">Away</td><td class="num">12-10</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>AS Monaco</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 100-96</td>
           <td class="mu">Away</td><td class="num">13-10</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td>Virtus Bologna</td>
+          <td class="dc">23 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 102-93</td>
           <td class="mu">Away</td><td class="num">14-10</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td>Dubai Basketball</td>
+          <td class="dc">30 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 95-92</td>
           <td class="mu">Home</td><td class="num">15-10</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 87-75</td>
           <td class="mu">Home</td><td class="num">16-10</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 82-83</td>
           <td class="mu">Home</td><td class="num">16-11</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 86-92</td>
           <td class="mu">Away</td><td class="num">16-12</td>
         </tr><tr>
-          <td class="dc">25 Feb 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">25 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 91-81</td>
           <td class="mu">Home</td><td class="num">17-12</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">06 Mar 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 80-85</td>
           <td class="mu">Home</td><td class="num">17-13</td>
         </tr></tbody>
@@ -1982,115 +1983,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>Paris Basketball</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 79-90</td>
           <td class="mu">Away</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>AS Monaco</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 77-73</td>
           <td class="mu">Home</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 90-83</td>
           <td class="mu">Away</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">24 Oct 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">24 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 92-75</td>
           <td class="mu">Home</td><td class="num">4-2</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 65-86</td>
           <td class="mu">Away</td><td class="num">4-3</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 70-86</td>
           <td class="mu">Away</td><td class="num">4-4</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 76-87</td>
           <td class="mu">Away</td><td class="num">4-5</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 99-89</td>
           <td class="mu">Home</td><td class="num">5-5</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>FC Barcelona</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 81-88</td>
           <td class="mu">Away</td><td class="num">5-6</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="win num">W 99-89</td>
           <td class="mu">Home</td><td class="num">6-6</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 64-66</td>
           <td class="mu">Away</td><td class="num">6-7</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td>Dubai Basketball</td>
+          <td class="dc">05 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 79-78</td>
           <td class="mu">Home</td><td class="num">7-7</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 74-79</td>
           <td class="mu">Home</td><td class="num">7-8</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">17 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 86-68</td>
           <td class="mu">Away</td><td class="num">8-8</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 89-90</td>
           <td class="mu">Away</td><td class="num">8-9</td>
         </tr><tr>
-          <td class="dc">26 Dec 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">26 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 94-97</td>
           <td class="mu">Home</td><td class="num">8-10</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 97-85</td>
           <td class="mu">Home</td><td class="num">9-10</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 83-79</td>
           <td class="mu">Home</td><td class="num">10-10</td>
         </tr><tr>
-          <td class="dc">08 Jan 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">08 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 71-84</td>
           <td class="mu">Away</td><td class="num">10-11</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Dubai Basketball</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 80-72</td>
           <td class="mu">Away</td><td class="num">11-11</td>
         </tr><tr>
-          <td class="dc">21 Jan 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">21 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 80-85</td>
           <td class="mu">Home</td><td class="num">11-12</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">23 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 93-102</td>
           <td class="mu">Home</td><td class="num">11-13</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td>AS Monaco</td>
+          <td class="dc">30 Jan 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 84-82</td>
           <td class="mu">Away</td><td class="num">12-13</td>
         </tr><tr>
-          <td class="dc">04 Feb 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">04 Feb 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="loss num">L 70-80</td>
           <td class="mu">Home</td><td class="num">12-14</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 77-109</td>
           <td class="mu">Away</td><td class="num">12-15</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="loss num">L 60-91</td>
           <td class="mu">Away</td><td class="num">12-16</td>
         </tr><tr>
-          <td class="dc">25 Feb 2026</td><td>FC Barcelona</td>
+          <td class="dc">25 Feb 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 85-80</td>
           <td class="mu">Home</td><td class="num">13-16</td>
         </tr><tr>
-          <td class="dc">05 Mar 2026</td><td>Real Madrid</td>
+          <td class="dc">05 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 84-92</td>
           <td class="mu">Away</td><td class="num">13-17</td>
         </tr></tbody>
@@ -2114,115 +2115,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">10 Oct 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">10 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 98-70</td>
           <td class="mu">Away</td><td class="num">3-0</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 79-88</td>
           <td class="mu">Away</td><td class="num">3-1</td>
         </tr><tr>
-          <td class="dc">16 Oct 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">16 Oct 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 78-89</td>
           <td class="mu">Home</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>FC Barcelona</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 88-73</td>
           <td class="mu">Away</td><td class="num">4-2</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Virtus Bologna</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 86-65</td>
           <td class="mu">Home</td><td class="num">5-2</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 96-59</td>
           <td class="mu">Home</td><td class="num">6-2</td>
         </tr><tr>
-          <td class="dc">07 Nov 2025</td><td>Valencia Basket</td>
+          <td class="dc">07 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 86-77</td>
           <td class="mu">Home</td><td class="num">7-2</td>
         </tr><tr>
-          <td class="dc">12 Nov 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">12 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 78-95</td>
           <td class="mu">Away</td><td class="num">7-3</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>Dubai Basketball</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 89-95</td>
           <td class="mu">Away</td><td class="num">7-4</td>
         </tr><tr>
-          <td class="dc">20 Nov 2025</td><td>Real Madrid</td>
+          <td class="dc">20 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 99-100</td>
           <td class="mu">Away</td><td class="num">7-5</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 82-67</td>
           <td class="mu">Home</td><td class="num">8-5</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 65-83</td>
           <td class="mu">Home</td><td class="num">8-6</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>Paris Basketball</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 108-105</td>
           <td class="mu">Away</td><td class="num">9-6</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">17 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="loss num">L 64-87</td>
           <td class="mu">Home</td><td class="num">9-7</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 109-68</td>
           <td class="mu">Home</td><td class="num">10-7</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 85-92</td>
           <td class="mu">Home</td><td class="num">10-8</td>
         </tr><tr>
-          <td class="dc">30 Dec 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">30 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 93-80</td>
           <td class="mu">Away</td><td class="num">11-8</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Virtus Bologna</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 79-83</td>
           <td class="mu">Away</td><td class="num">11-9</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 99-67</td>
           <td class="mu">Home</td><td class="num">12-9</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 97-100</td>
           <td class="mu">Away</td><td class="num">12-10</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 96-77</td>
           <td class="mu">Away</td><td class="num">13-10</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 86-82</td>
           <td class="mu">Away</td><td class="num">14-10</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">30 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 91-102</td>
           <td class="mu">Away</td><td class="num">14-11</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>AS Monaco</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 104-87</td>
           <td class="mu">Home</td><td class="num">15-11</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="loss num">L 82-92</td>
           <td class="mu">Away</td><td class="num">15-12</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 93-82</td>
           <td class="mu">Home</td><td class="num">16-12</td>
         </tr><tr>
-          <td class="dc">25 Feb 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">25 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 99-94</td>
           <td class="mu">Home</td><td class="num">17-12</td>
         </tr><tr>
-          <td class="dc">05 Mar 2026</td><td>Valencia Basket</td>
+          <td class="dc">05 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 87-91</td>
           <td class="mu">Away</td><td class="num">17-13</td>
         </tr></tbody>
@@ -2246,115 +2247,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 84-86</td>
           <td class="mu">Home</td><td class="num">0-3</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>Paris Basketball</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 87-105</td>
           <td class="mu">Away</td><td class="num">0-4</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="loss num">L 79-91</td>
           <td class="mu">Home</td><td class="num">0-5</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 72-90</td>
           <td class="mu">Away</td><td class="num">0-6</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Dubai Basketball</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 92-85</td>
           <td class="mu">Home</td><td class="num">1-6</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">31 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 86-75</td>
           <td class="mu">Home</td><td class="num">2-6</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>Virtus Bologna</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 87-76</td>
           <td class="mu">Home</td><td class="num">3-6</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 89-114</td>
           <td class="mu">Away</td><td class="num">3-7</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 83-89</td>
           <td class="mu">Away</td><td class="num">3-8</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 95-73</td>
           <td class="mu">Home</td><td class="num">4-8</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 67-82</td>
           <td class="mu">Away</td><td class="num">4-9</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">05 Dec 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 88-78</td>
           <td class="mu">Home</td><td class="num">5-9</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>Real Madrid</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 87-94</td>
           <td class="mu">Away</td><td class="num">5-10</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td>AS Monaco</td>
+          <td class="dc">17 Dec 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 85-73</td>
           <td class="mu">Home</td><td class="num">6-10</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>FC Barcelona</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 124-134</td>
           <td class="mu">Away</td><td class="num">6-11</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Valencia Basket</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 81-91</td>
           <td class="mu">Away</td><td class="num">6-12</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 93-108</td>
           <td class="mu">Home</td><td class="num">6-13</td>
         </tr><tr>
-          <td class="dc">07 Jan 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">07 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 89-96</td>
           <td class="mu">Away</td><td class="num">6-14</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 78-73</td>
           <td class="mu">Home</td><td class="num">7-14</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 89-75</td>
           <td class="mu">Away</td><td class="num">8-14</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 74-93</td>
           <td class="mu">Away</td><td class="num">8-15</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">23 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 71-84</td>
           <td class="mu">Away</td><td class="num">8-16</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">30 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 102-91</td>
           <td class="mu">Home</td><td class="num">9-16</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 89-109</td>
           <td class="mu">Away</td><td class="num">9-17</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td>FC Barcelona</td>
+          <td class="dc">06 Feb 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 91-97</td>
           <td class="mu">Home</td><td class="num">9-18</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>AS Monaco</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 92-102</td>
           <td class="mu">Away</td><td class="num">9-19</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>Valencia Basket</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 79-108</td>
           <td class="mu">Home</td><td class="num">9-20</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td>Paris Basketball</td>
+          <td class="dc">06 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 81-97</td>
           <td class="mu">Home</td><td class="num">9-21</td>
         </tr></tbody>
@@ -2378,111 +2379,111 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 93-87</td>
           <td class="mu">Home</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>Real Madrid</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 86-93</td>
           <td class="mu">Away</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 91-79</td>
           <td class="mu">Away</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">24 Oct 2025</td><td>Paris Basketball</td>
+          <td class="dc">24 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="loss num">L 83-101</td>
           <td class="mu">Home</td><td class="num">3-3</td>
         </tr><tr>
-          <td class="dc">29 Oct 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">29 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 84-97</td>
           <td class="mu">Away</td><td class="num">3-4</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td>FC Barcelona</td>
+          <td class="dc">31 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 76-78</td>
           <td class="mu">Home</td><td class="num">3-5</td>
         </tr><tr>
-          <td class="dc">07 Nov 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">07 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 71-80</td>
           <td class="mu">Away</td><td class="num">3-6</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>AS Monaco</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 78-76</td>
           <td class="mu">Home</td><td class="num">4-6</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="loss num">L 87-88</td>
           <td class="mu">Away</td><td class="num">4-7</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 87-99</td>
           <td class="mu">Home</td><td class="num">4-8</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 69-91</td>
           <td class="mu">Away</td><td class="num">4-9</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 92-85</td>
           <td class="mu">Home</td><td class="num">5-9</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 79-76</td>
           <td class="mu">Home</td><td class="num">6-9</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td>Virtus Bologna</td>
+          <td class="dc">17 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 68-86</td>
           <td class="mu">Home</td><td class="num">6-10</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 68-109</td>
           <td class="mu">Away</td><td class="num">6-11</td>
         </tr><tr>
-          <td class="dc">26 Dec 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">26 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 87-112</td>
           <td class="mu">Home</td><td class="num">6-12</td>
         </tr><tr>
-          <td class="dc">30 Dec 2025</td><td>Valencia Basket</td>
+          <td class="dc">30 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 73-86</td>
           <td class="mu">Away</td><td class="num">6-13</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>AS Monaco</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 84-101</td>
           <td class="mu">Away</td><td class="num">6-14</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td>FC Barcelona</td>
+          <td class="dc">09 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 70-88</td>
           <td class="mu">Away</td><td class="num">6-15</td>
         </tr><tr>
-          <td class="dc">14 Jan 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">14 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 66-104</td>
           <td class="mu">Home</td><td class="num">6-16</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 67-63</td>
           <td class="mu">Away</td><td class="num">7-16</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">23 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="win num">W 104-101</td>
           <td class="mu">Home</td><td class="num">8-16</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 79-85</td>
           <td class="mu">Away</td><td class="num">8-17</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 93-95</td>
           <td class="mu">Away</td><td class="num">8-18</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 78-62</td>
           <td class="mu">Home</td><td class="num">9-18</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>Real Madrid</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 73-77</td>
           <td class="mu">Home</td><td class="num">9-19</td>
         </tr><tr>
-          <td class="dc">25 Feb 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">25 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 78-81</td>
           <td class="mu">Away</td><td class="num">9-20</td>
         </tr></tbody>
@@ -2506,107 +2507,107 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">08 Oct 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">08 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 90-103</td>
           <td class="mu">Home</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>Valencia Basket</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 100-93</td>
           <td class="mu">Away</td><td class="num">3-1</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Paris Basketball</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 89-88</td>
           <td class="mu">Away</td><td class="num">4-1</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>AS Monaco</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="win num">W 85-77</td>
           <td class="mu">Home</td><td class="num">5-1</td>
         </tr><tr>
-          <td class="dc">29 Oct 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">29 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 97-84</td>
           <td class="mu">Home</td><td class="num">6-1</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">31 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 58-62</td>
           <td class="mu">Away</td><td class="num">6-2</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>Dubai Basketball</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 109-97</td>
           <td class="mu">Away</td><td class="num">7-2</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 114-89</td>
           <td class="mu">Home</td><td class="num">8-2</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 68-74</td>
           <td class="mu">Away</td><td class="num">8-3</td>
         </tr><tr>
-          <td class="dc">20 Nov 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">20 Nov 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 105-83</td>
           <td class="mu">Away</td><td class="num">9-3</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Real Madrid</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 74-75</td>
           <td class="mu">Home</td><td class="num">9-4</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 87-80</td>
           <td class="mu">Home</td><td class="num">10-4</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>Virtus Bologna</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 79-74</td>
           <td class="mu">Away</td><td class="num">11-4</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 84-78</td>
           <td class="mu">Home</td><td class="num">12-4</td>
         </tr><tr>
-          <td class="dc">18 Dec 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">18 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 82-93</td>
           <td class="mu">Away</td><td class="num">12-5</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 82-72</td>
           <td class="mu">Away</td><td class="num">13-5</td>
         </tr><tr>
-          <td class="dc">30 Dec 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">30 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 80-93</td>
           <td class="mu">Home</td><td class="num">13-6</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Dubai Basketball</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="win num">W 85-60</td>
           <td class="mu">Home</td><td class="num">14-6</td>
         </tr><tr>
-          <td class="dc">16 Jan 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">16 Jan 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 81-73</td>
           <td class="mu">Away</td><td class="num">15-6</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 71-66</td>
           <td class="mu">Home</td><td class="num">16-6</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">23 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="loss num">L 101-104</td>
           <td class="mu">Away</td><td class="num">16-7</td>
         </tr><tr>
-          <td class="dc">29 Jan 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">29 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 64-79</td>
           <td class="mu">Home</td><td class="num">16-8</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 75-87</td>
           <td class="mu">Away</td><td class="num">16-9</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>Valencia Basket</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 99-104</td>
           <td class="mu">Home</td><td class="num">16-10</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>Zalgiris Kaunas</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 82-93</td>
           <td class="mu">Away</td><td class="num">16-11</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 92-86</td>
           <td class="mu">Home</td><td class="num">17-11</td>
         </tr></tbody>
@@ -2630,115 +2631,115 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">09 Oct 2025</td><td>Virtus Bologna</td>
+          <td class="dc">09 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="win num">W 90-79</td>
           <td class="mu">Home</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">15 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 105-87</td>
           <td class="mu">Home</td><td class="num">3-1</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">17 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 88-89</td>
           <td class="mu">Home</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">24 Oct 2025</td><td>Partizan Mozzart Bet Belgrade</td>
+          <td class="dc">24 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
           <td class="win num">W 101-83</td>
           <td class="mu">Away</td><td class="num">4-2</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="loss num">L 80-90</td>
           <td class="mu">Home</td><td class="num">4-3</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="loss num">L 77-86</td>
           <td class="mu">Away</td><td class="num">4-4</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 82-86</td>
           <td class="mu">Home</td><td class="num">4-5</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 95-101</td>
           <td class="mu">Home</td><td class="num">4-6</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td>Valencia Basket</td>
+          <td class="dc">13 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="win num">W 90-86</td>
           <td class="mu">Home</td><td class="num">5-6</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">21 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 86-98</td>
           <td class="mu">Away</td><td class="num">5-7</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Dubai Basketball</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 89-90</td>
           <td class="mu">Away</td><td class="num">5-8</td>
         </tr><tr>
-          <td class="dc">04 Dec 2025</td><td>AS Monaco</td>
+          <td class="dc">04 Dec 2025</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 104-125</td>
           <td class="mu">Away</td><td class="num">5-9</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">11 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="loss num">L 105-108</td>
           <td class="mu">Home</td><td class="num">5-10</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>FC Barcelona</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 69-85</td>
           <td class="mu">Home</td><td class="num">5-11</td>
         </tr><tr>
-          <td class="dc">18 Dec 2025</td><td>Real Madrid</td>
+          <td class="dc">18 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 90-95</td>
           <td class="mu">Away</td><td class="num">5-12</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 102-92</td>
           <td class="mu">Home</td><td class="num">6-12</td>
         </tr><tr>
-          <td class="dc">30 Dec 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">30 Dec 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="loss num">L 89-94</td>
           <td class="mu">Away</td><td class="num">6-13</td>
         </tr><tr>
-          <td class="dc">07 Jan 2026</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">07 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 84-79</td>
           <td class="mu">Away</td><td class="num">7-13</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>AS Monaco</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
           <td class="loss num">L 87-95</td>
           <td class="mu">Home</td><td class="num">7-14</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>Valencia Basket</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 84-98</td>
           <td class="mu">Away</td><td class="num">7-15</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Dubai Basketball</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
           <td class="loss num">L 79-99</td>
           <td class="mu">Home</td><td class="num">7-16</td>
         </tr><tr>
-          <td class="dc">27 Jan 2026</td><td>Real Madrid</td>
+          <td class="dc">27 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 98-92</td>
           <td class="mu">Home</td><td class="num">8-16</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>FC Bayern Munich</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="loss num">L 75-81</td>
           <td class="mu">Away</td><td class="num">8-17</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="loss num">L 90-92</td>
           <td class="mu">Home</td><td class="num">8-18</td>
         </tr><tr>
-          <td class="dc">12 Feb 2026</td><td>FC Barcelona</td>
+          <td class="dc">12 Feb 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 85-74</td>
           <td class="mu">Away</td><td class="num">9-18</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="win num">W 104-99</td>
           <td class="mu">Away</td><td class="num">10-18</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">06 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 97-81</td>
           <td class="mu">Away</td><td class="num">11-18</td>
         </tr><tr>
-          <td class="dc">10 Mar 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">10 Mar 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 87-104</td>
           <td class="mu">Home</td><td class="num">11-19</td>
         </tr></tbody>
@@ -2762,111 +2763,111 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">10 Oct 2025</td><td>Olympiacos Piraeus</td>
+          <td class="dc">10 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="loss num">L 67-86</td>
           <td class="mu">Away</td><td class="num">1-2</td>
         </tr><tr>
-          <td class="dc">14 Oct 2025</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">14 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="win num">W 93-69</td>
           <td class="mu">Away</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">16 Oct 2025</td><td>FC Barcelona</td>
+          <td class="dc">16 Oct 2025</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="win num">W 83-78</td>
           <td class="mu">Home</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">23 Oct 2025</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="loss num">L 79-85</td>
           <td class="mu">Away</td><td class="num">3-3</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td>Kosner Baskonia Vitoria-Gasteiz</td>
+          <td class="dc">28 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 85-92</td>
           <td class="mu">Away</td><td class="num">3-4</td>
         </tr><tr>
-          <td class="dc">30 Oct 2025</td><td>Valencia Basket</td>
+          <td class="dc">30 Oct 2025</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
           <td class="loss num">L 78-80</td>
           <td class="mu">Away</td><td class="num">3-5</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">06 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 97-109</td>
           <td class="mu">Home</td><td class="num">3-6</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">11 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="win num">W 102-86</td>
           <td class="mu">Home</td><td class="num">4-6</td>
         </tr><tr>
-          <td class="dc">14 Nov 2025</td><td>Zalgiris Kaunas</td>
+          <td class="dc">14 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
           <td class="win num">W 95-89</td>
           <td class="mu">Home</td><td class="num">5-6</td>
         </tr><tr>
-          <td class="dc">20 Nov 2025</td><td>Panathinaikos AKTOR Athens</td>
+          <td class="dc">20 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
           <td class="loss num">L 82-103</td>
           <td class="mu">Away</td><td class="num">5-7</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td>Paris Basketball</td>
+          <td class="dc">25 Nov 2025</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 90-89</td>
           <td class="mu">Home</td><td class="num">6-7</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td>Virtus Bologna</td>
+          <td class="dc">05 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 78-79</td>
           <td class="mu">Away</td><td class="num">6-8</td>
         </tr><tr>
-          <td class="dc">12 Dec 2025</td><td>FC Bayern Munich</td>
+          <td class="dc">12 Dec 2025</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
           <td class="win num">W 89-88</td>
           <td class="mu">Home</td><td class="num">7-8</td>
         </tr><tr>
-          <td class="dc">16 Dec 2025</td><td>Maccabi Rapyd Tel Aviv</td>
+          <td class="dc">16 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
           <td class="loss num">L 95-97</td>
           <td class="mu">Home</td><td class="num">7-9</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td>Anadolu Efes Istanbul</td>
+          <td class="dc">19 Dec 2025</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
           <td class="win num">W 80-76</td>
           <td class="mu">Away</td><td class="num">8-9</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">23 Dec 2025</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 99-92</td>
           <td class="mu">Home</td><td class="num">9-9</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td>Real Madrid</td>
+          <td class="dc">02 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="loss num">L 93-107</td>
           <td class="mu">Away</td><td class="num">9-10</td>
         </tr><tr>
-          <td class="dc">06 Jan 2026</td><td>Hapoel Ibi Tel Aviv</td>
+          <td class="dc">06 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Hapoel-Ibi-Tel-Aviv')">Hapoel Ibi Tel Aviv</span></td>
           <td class="loss num">L 60-85</td>
           <td class="mu">Away</td><td class="num">9-11</td>
         </tr><tr>
-          <td class="dc">08 Jan 2026</td><td>Fenerbahce Beko Istanbul</td>
+          <td class="dc">08 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
           <td class="win num">W 92-81</td>
           <td class="mu">Home</td><td class="num">10-11</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td>Virtus Bologna</td>
+          <td class="dc">15 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
           <td class="loss num">L 72-80</td>
           <td class="mu">Home</td><td class="num">10-12</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td>FC Barcelona</td>
+          <td class="dc">20 Jan 2026</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
           <td class="loss num">L 89-91</td>
           <td class="mu">Away</td><td class="num">10-13</td>
         </tr><tr>
-          <td class="dc">22 Jan 2026</td><td>Paris Basketball</td>
+          <td class="dc">22 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
           <td class="win num">W 99-79</td>
           <td class="mu">Away</td><td class="num">11-13</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td>Crvena Zvezda Meridianbet Belgrade</td>
+          <td class="dc">30 Jan 2026</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
           <td class="loss num">L 92-95</td>
           <td class="mu">Away</td><td class="num">11-14</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td>Olympiacos Piraeus</td>
+          <td class="dc">03 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
           <td class="win num">W 108-98</td>
           <td class="mu">Home</td><td class="num">12-14</td>
         </tr><tr>
-          <td class="dc">05 Feb 2026</td><td>Real Madrid</td>
+          <td class="dc">05 Feb 2026</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
           <td class="win num">W 93-85</td>
           <td class="mu">Home</td><td class="num">13-14</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td>EA7 Emporio Armani Milan</td>
+          <td class="dc">13 Feb 2026</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
           <td class="win num">W 96-78</td>
           <td class="mu">Away</td><td class="num">14-14</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td>LDLC ASVEL Villeurbanne</td>
+          <td class="dc">26 Feb 2026</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
           <td class="win num">W 96-85</td>
           <td class="mu">Home</td><td class="num">15-14</td>
         </tr></tbody>

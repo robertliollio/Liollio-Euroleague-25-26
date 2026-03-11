@@ -6,43 +6,44 @@
 <title>Liollio – Euroleague 2025-26</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{scroll-padding-top:62px;--bg:#FFFFFF;--sur:#0FCF8F2;--card:#FCF8F2;--bdr:#D0061F;--acc:#D0061F;--txt:#0D5EAF;--mu:#4e6a88;--sub:#1e3050;--win:#4ade80;--loss:#f87171;--pos:#4ade80;--neg:#f87171}
+:root{scroll-padding-top:62px;--bg:#FFFFFF;--sur:#FCF8F2;--card:#FCF8F2;--bdr:#D0061F;--acc:#D0061F;--txt:#0D5EAF;--mu:#4e6a88;--sub:#1e3050;--win:#4ade80;--loss:#f87171;--pos:#4ade80;--neg:#f87171}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1117;--sur:#1a1d27;--card:#1e2130;--bdr:#D0061F;--acc:#e8395a;--txt:#6cb4f5;--mu:#7a8fa6;--sub:#2a3550;--win:#4ade80;--loss:#f87171;--pos:#4ade80;--neg:#f87171}}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--txt);font-family:'DM Sans',sans-serif;font-size:13.5px;line-height:1.5}
 header{background:var(--sur);border-bottom:1px solid var(--bdr);padding:16px 40px;display:flex;align-items:center;justify-content:space-between;}
 .wm{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:4px;line-height:1}.wm span{color:var(--acc)}
 .hr{text-align:right;color:var(--mu);font-size:11px;letter-spacing:.5px;line-height:1.9;font-family:'DM Mono',monospace}
-main{padding:32px 40px;max-width:1200px;margin:0 auto}
-.tp{scroll-margin-top:80px}
+main{padding:32px 40px;max-width:1200px;margin:0 auto;overflow-x:hidden}
+.tp{scroll-margin-top:80px;width:100%;box-sizing:border-box;overflow-x:hidden}
 .vl{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--mu);text-transform:uppercase;margin-bottom:14px}
-.tbl-wrap{border:1px solid var(--bdr);border-radius:10px;overflow:hidden}
+.tbl-wrap{border:1px solid var(--bdr);border-radius:10px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 #rtbl{width:100%;border-collapse:collapse}
 #rtbl thead tr{background:var(--sur);border-bottom:2px solid var(--acc)}
-#rtbl th{color:var(--acc);font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:1px;padding:11px 14px;text-align:left;text-transform:uppercase;cursor:pointer;user-select:none;white-space:nowrap;transition:color .15s}
+#rtbl th{color:var(--acc);font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.5px;padding:10px 8px;text-align:left;text-transform:uppercase;cursor:pointer;user-select:none;white-space:nowrap;transition:color .15s}
 #rtbl th:hover{color:var(--txt)}
 #rtbl th.num,#rtbl td.num{text-align:right}
-#rtbl th.rp{color:var(--mu);font-size:10px;padding-left:2px}
+#rtbl th.rp{color:var(--mu);font-size:9px;padding:10px 4px 10px 2px}
 #rtbl tbody tr{border-bottom:1px solid var(--bdr);transition:background .12s;cursor:pointer}
 #rtbl tbody tr:last-child{border-bottom:none}
 #rtbl tbody tr:hover{background:var(--card)}
 #rtbl tbody tr:nth-child(even){background:rgba(255,255,255,.015)}
 #rtbl tbody tr:nth-child(even):hover{background:var(--card)}
-#rtbl td{padding:11px 14px;white-space:nowrap}
+#rtbl td{padding:10px 8px;white-space:nowrap;font-size:13px}
 .tname{color:var(--acc);font-weight:500;transition:opacity .15s}
 tr:hover .tname{opacity:.75}
 .lg{font-size:11px;color:var(--mu);font-weight:400;margin-left:8px}
 .em.pos{color:var(--pos);font-family:'DM Mono',monospace;font-weight:500}
 .em.neg{color:var(--neg);font-family:'DM Mono',monospace;font-weight:500}
-.rp{color:var(--mu);font-size:11px;padding-left:2px!important;font-family:'DM Mono',monospace}
+.rp{color:var(--mu);font-size:10px;padding:10px 4px 10px 2px!important;font-family:'DM Mono',monospace}
 .back{background:none;border:1px solid var(--bdr);border-radius:5px;color:var(--mu);cursor:pointer;font-family:'DM Sans',sans-serif;font-size:12px;padding:7px 16px;margin-bottom:22px;letter-spacing:.5px;transition:all .15s}
 .back:hover{border-color:var(--acc);color:var(--acc)}
 .ttl{font-family:'Bebas Neue',sans-serif;font-size:48px;letter-spacing:2px;line-height:1}
 .tbar{width:44px;height:3px;background:var(--acc);margin:10px 0 28px}
 .lay{display:grid;grid-template-columns:320px 1fr;gap:20px;align-items:start}
 .ptl{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--mu);margin-bottom:12px}
-.sp{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:20px}
-.ss{}
-.stbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.sp{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:20px;min-width:0}
+.ss{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.stbl{width:100%;min-width:260px;border-collapse:collapse;font-size:12.5px}
 .stbl thead th{color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;padding:4px 8px 8px;text-transform:uppercase;border-bottom:1px solid var(--bdr)}
 .stbl thead th.num{text-align:right}
 .sh td{color:var(--acc);font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:12px 8px 5px;border-bottom:1px solid var(--sub)}
@@ -51,12 +52,12 @@ tr:hover .tname{opacity:.75}
 .sl{color:var(--txt)}
 .sr .num{text-align:right;font-family:'DM Mono',monospace;font-size:12px}
 .sr:hover td{background:rgba(255,255,255,.03)}
-.schp{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:20px}
-.schs{overflow-x:auto}
-.schtbl{width:100%;border-collapse:collapse;font-size:13px}
-.schtbl thead th{color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;padding:4px 12px 8px;text-transform:uppercase;border-bottom:1px solid var(--bdr);text-align:left;white-space:nowrap}
+.schp{background:var(--card);border:1px solid var(--bdr);border-radius:10px;padding:20px;min-width:0}
+.schs{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.schtbl{width:100%;min-width:380px;border-collapse:collapse;font-size:13px}
+.schtbl thead th{color:var(--mu);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;padding:4px 8px 8px;text-transform:uppercase;border-bottom:1px solid var(--bdr);text-align:left;white-space:nowrap}
 .schtbl thead th.num{text-align:right}
-.schtbl td{padding:9px 12px;border-bottom:1px solid rgba(28,46,70,.6);white-space:nowrap}
+.schtbl td{padding:8px 8px;border-bottom:1px solid rgba(28,46,70,.6);white-space:nowrap;font-size:12px}
 .schtbl tbody tr:last-child td{border-bottom:none}
 .schtbl td.num{text-align:right;font-family:'DM Mono',monospace;font-variant-numeric:tabular-nums}
 .dc{color:var(--mu);font-size:12px;font-family:'DM Mono',monospace}.rnd{color:var(--mu);font-size:11px;font-family:'DM Mono',monospace}
@@ -67,7 +68,7 @@ tr:hover .tname{opacity:.75}
 .opp-link{color:var(--acc);cursor:pointer;transition:opacity .15s}.opp-link:hover{opacity:.7}
 .schtbl tbody tr:hover td{background:rgba(255,255,255,.03)}
 .ts{color:var(--mu);font-size:11px;margin-top:20px;text-align:right;font-family:'DM Mono',monospace}
-@media(max-width:860px){.lay{grid-template-columns:1fr}main{padding:20px 16px}header{padding:14px 16px}}
+@media(max-width:860px){.lay{grid-template-columns:1fr}main{padding:20px 16px}header{padding:14px 16px}.stbl{font-size:11.5px}.sr td{padding:6px 6px}.stbl thead th{padding:4px 6px 6px}.sh td{padding:10px 6px 4px}}
 </style>
 </head>
 <body>
@@ -250,7 +251,7 @@ tr:hover .tname{opacity:.75}
           <td class="num">65.1</td><td class="num rp">12</td>
         </tr></tbody>
     </table></div>
-    <p class="ts">Updated 11 Mar 2026 19:40</p>
+    <p class="ts">Updated 11 Mar 2026 23:56</p>
   </div>
   <div class="tp" id="team-Olympiacos-Piraeus" style="display:none">
       <h2 class="ttl">Olympiacos Piraeus</h2><div class="tbar"></div>
@@ -267,7 +268,7 @@ tr:hover .tname{opacity:.75}
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th class="num rnd">Rk</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
             <tbody><tr>
-          <td class="dc">30 Sep 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">30 Sep 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 102-96</td>
           <td class="mu">Away</td><td class="num">1-0</td>
         </tr><tr>
@@ -414,7 +415,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 96-103</td>
           <td class="mu">Home</td><td class="num">1-1</td>
         </tr><tr>
-          <td class="dc">09 Oct 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">09 Oct 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 86-84</td>
           <td class="mu">Away</td><td class="num">2-1</td>
         </tr><tr>
@@ -494,7 +495,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 78-85</td>
           <td class="mu">Away</td><td class="num">13-9</td>
         </tr><tr>
-          <td class="dc">20 Jan 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">20 Jan 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 93-74</td>
           <td class="mu">Home</td><td class="num">14-9</td>
         </tr><tr>
@@ -613,7 +614,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 82-85</td>
           <td class="mu">Away</td><td class="num">11-6</td>
         </tr><tr>
-          <td class="dc">23 Dec 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">23 Dec 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 91-81</td>
           <td class="mu">Home</td><td class="num">12-6</td>
         </tr><tr>
@@ -657,7 +658,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 82-67</td>
           <td class="mu">Home</td><td class="num">18-10</td>
         </tr><tr>
-          <td class="dc">26 Feb 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">26 Feb 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 108-79</td>
           <td class="mu">Away</td><td class="num">19-10</td>
         </tr><tr>
@@ -752,7 +753,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 72-71</td>
           <td class="mu">Home</td><td class="num">11-6</td>
         </tr><tr>
-          <td class="dc">02 Jan 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">02 Jan 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 108-93</td>
           <td class="mu">Away</td><td class="num">12-6</td>
         </tr><tr>
@@ -772,7 +773,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 85-80</td>
           <td class="mu">Away</td><td class="num">15-7</td>
         </tr><tr>
-          <td class="dc">23 Jan 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">23 Jan 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 84-71</td>
           <td class="mu">Home</td><td class="num">16-7</td>
         </tr><tr>
@@ -875,7 +876,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 81-75</td>
           <td class="mu">Away</td><td class="num">8-6</td>
         </tr><tr>
-          <td class="dc">11 Dec 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">11 Dec 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 94-87</td>
           <td class="mu">Home</td><td class="num">9-6</td>
         </tr><tr>
@@ -962,7 +963,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 77-80</td>
           <td class="mu">Home</td><td class="num">0-1</td>
         </tr><tr>
-          <td class="dc">03 Oct 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">03 Oct 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 102-95</td>
           <td class="mu">Home</td><td class="num">1-1</td>
         </tr><tr>
@@ -1038,7 +1039,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 69-80</td>
           <td class="mu">Home</td><td class="num">6-14</td>
         </tr><tr>
-          <td class="dc">09 Jan 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">09 Jan 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 73-78</td>
           <td class="mu">Away</td><td class="num">6-15</td>
         </tr><tr>
@@ -1161,7 +1162,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 85-69</td>
           <td class="mu">Away</td><td class="num">11-5</td>
         </tr><tr>
-          <td class="dc">19 Dec 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">19 Dec 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 134-124</td>
           <td class="mu">Home</td><td class="num">12-5</td>
         </tr><tr>
@@ -1201,7 +1202,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 78-82</td>
           <td class="mu">Home</td><td class="num">16-10</td>
         </tr><tr>
-          <td class="dc">06 Feb 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">06 Feb 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 97-91</td>
           <td class="mu">Away</td><td class="num">17-10</td>
         </tr><tr>
@@ -1280,7 +1281,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 72-74</td>
           <td class="mu">Away</td><td class="num">5-6</td>
         </tr><tr>
-          <td class="dc">21 Nov 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">21 Nov 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 73-95</td>
           <td class="mu">Away</td><td class="num">5-7</td>
         </tr><tr>
@@ -1312,7 +1313,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 95-71</td>
           <td class="mu">Home</td><td class="num">6-13</td>
         </tr><tr>
-          <td class="dc">07 Jan 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">07 Jan 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 96-89</td>
           <td class="mu">Home</td><td class="num">7-13</td>
         </tr><tr>
@@ -1403,7 +1404,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 90-80</td>
           <td class="mu">Away</td><td class="num">3-4</td>
         </tr><tr>
-          <td class="dc">31 Oct 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">31 Oct 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 75-86</td>
           <td class="mu">Away</td><td class="num">3-5</td>
         </tr><tr>
@@ -1459,7 +1460,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 74-87</td>
           <td class="mu">Away</td><td class="num">6-15</td>
         </tr><tr>
-          <td class="dc">15 Jan 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">15 Jan 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 75-89</td>
           <td class="mu">Home</td><td class="num">6-16</td>
         </tr><tr>
@@ -1566,7 +1567,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 102-88</td>
           <td class="mu">Away</td><td class="num">7-6</td>
         </tr><tr>
-          <td class="dc">05 Dec 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">05 Dec 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 78-88</td>
           <td class="mu">Away</td><td class="num">7-7</td>
         </tr><tr>
@@ -1614,7 +1615,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 85-79</td>
           <td class="mu">Home</td><td class="num">12-13</td>
         </tr><tr>
-          <td class="dc">03 Feb 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">03 Feb 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 109-89</td>
           <td class="mu">Home</td><td class="num">13-13</td>
         </tr><tr>
@@ -1693,7 +1694,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 75-84</td>
           <td class="mu">Away</td><td class="num">2-8</td>
         </tr><tr>
-          <td class="dc">13 Nov 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">13 Nov 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 89-83</td>
           <td class="mu">Home</td><td class="num">3-8</td>
         </tr><tr>
@@ -1848,7 +1849,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 86-92</td>
           <td class="mu">Home</td><td class="num">9-6</td>
         </tr><tr>
-          <td class="dc">17 Dec 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">17 Dec 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 73-85</td>
           <td class="mu">Away</td><td class="num">9-7</td>
         </tr><tr>
@@ -1896,7 +1897,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 82-91</td>
           <td class="mu">Away</td><td class="num">15-12</td>
         </tr><tr>
-          <td class="dc">13 Feb 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">13 Feb 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 102-92</td>
           <td class="mu">Home</td><td class="num">16-12</td>
         </tr><tr>
@@ -1947,7 +1948,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 90-75</td>
           <td class="mu">Home</td><td class="num">3-2</td>
         </tr><tr>
-          <td class="dc">23 Oct 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">23 Oct 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 90-72</td>
           <td class="mu">Home</td><td class="num">4-2</td>
         </tr><tr>
@@ -2098,7 +2099,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 70-86</td>
           <td class="mu">Away</td><td class="num">4-4</td>
         </tr><tr>
-          <td class="dc">06 Nov 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">06 Nov 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 76-87</td>
           <td class="mu">Away</td><td class="num">4-5</td>
         </tr><tr>
@@ -2253,7 +2254,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 99-100</td>
           <td class="mu">Away</td><td class="num">7-5</td>
         </tr><tr>
-          <td class="dc">25 Nov 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">25 Nov 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 82-67</td>
           <td class="mu">Home</td><td class="num">8-5</td>
         </tr><tr>
@@ -2301,7 +2302,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 86-82</td>
           <td class="mu">Away</td><td class="num">14-10</td>
         </tr><tr>
-          <td class="dc">30 Jan 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">30 Jan 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 91-102</td>
           <td class="mu">Away</td><td class="num">14-11</td>
         </tr><tr>
@@ -2343,127 +2344,7 @@ tr:hover .tname{opacity:.75}
           <p class="ptl">Schedule &amp; Results</p>
           <div class="schs"><table class="schtbl">
             <thead><tr><th>Date</th><th class="num rnd">Rk</th><th>Opponent</th><th class="num">Result</th><th>Location</th><th class="num">Record</th></tr></thead>
-            <tbody><tr>
-          <td class="dc">30 Sep 2025</td><td class="num rnd">1</td><td><span class="opp-link" onclick="showTeam('Olympiacos-Piraeus')">Olympiacos Piraeus</span></td>
-          <td class="loss num">L 96-102</td>
-          <td class="mu">Home</td><td class="num">0-1</td>
-        </tr><tr>
-          <td class="dc">03 Oct 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
-          <td class="loss num">L 95-102</td>
-          <td class="mu">Away</td><td class="num">0-2</td>
-        </tr><tr>
-          <td class="dc">09 Oct 2025</td><td class="num rnd">9</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
-          <td class="loss num">L 84-86</td>
-          <td class="mu">Home</td><td class="num">0-3</td>
-        </tr><tr>
-          <td class="dc">15 Oct 2025</td><td class="num rnd">14</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
-          <td class="loss num">L 87-105</td>
-          <td class="mu">Away</td><td class="num">0-4</td>
-        </tr><tr>
-          <td class="dc">17 Oct 2025</td><td class="num rnd">19</td><td><span class="opp-link" onclick="showTeam('Partizan-Mozzart-Bet-Belgrade')">Partizan Mozzart Bet Belgrade</span></td>
-          <td class="loss num">L 79-91</td>
-          <td class="mu">Home</td><td class="num">0-5</td>
-        </tr><tr>
-          <td class="dc">23 Oct 2025</td><td class="num rnd">8</td><td><span class="opp-link" onclick="showTeam('Crvena-Zvezda-Meridianbet-Belgrade')">Crvena Zvezda Meridianbet Belgrade</span></td>
-          <td class="loss num">L 72-90</td>
-          <td class="mu">Away</td><td class="num">0-6</td>
-        </tr><tr>
-          <td class="dc">28 Oct 2025</td><td class="num rnd">11</td><td><span class="opp-link" onclick="showTeam('Dubai-Basketball')">Dubai Basketball</span></td>
-          <td class="win num">W 92-85</td>
-          <td class="mu">Home</td><td class="num">1-6</td>
-        </tr><tr>
-          <td class="dc">31 Oct 2025</td><td class="num rnd">17</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
-          <td class="win num">W 86-75</td>
-          <td class="mu">Home</td><td class="num">2-6</td>
-        </tr><tr>
-          <td class="dc">06 Nov 2025</td><td class="num rnd">16</td><td><span class="opp-link" onclick="showTeam('Virtus-Bologna')">Virtus Bologna</span></td>
-          <td class="win num">W 87-76</td>
-          <td class="mu">Home</td><td class="num">3-6</td>
-        </tr><tr>
-          <td class="dc">11 Nov 2025</td><td class="num rnd">7</td><td><span class="opp-link" onclick="showTeam('Hapoel-Tel-Aviv')">Hapoel Tel Aviv</span></td>
-          <td class="loss num">L 89-114</td>
-          <td class="mu">Away</td><td class="num">3-7</td>
-        </tr><tr>
-          <td class="dc">13 Nov 2025</td><td class="num rnd">13</td><td><span class="opp-link" onclick="showTeam('Maccabi-Rapyd-Tel-Aviv')">Maccabi Rapyd Tel Aviv</span></td>
-          <td class="loss num">L 83-89</td>
-          <td class="mu">Away</td><td class="num">3-8</td>
-        </tr><tr>
-          <td class="dc">21 Nov 2025</td><td class="num rnd">15</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
-          <td class="win num">W 95-73</td>
-          <td class="mu">Home</td><td class="num">4-8</td>
-        </tr><tr>
-          <td class="dc">25 Nov 2025</td><td class="num rnd">4</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
-          <td class="loss num">L 67-82</td>
-          <td class="mu">Away</td><td class="num">4-9</td>
-        </tr><tr>
-          <td class="dc">05 Dec 2025</td><td class="num rnd">12</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
-          <td class="win num">W 88-78</td>
-          <td class="mu">Home</td><td class="num">5-9</td>
-        </tr><tr>
-          <td class="dc">11 Dec 2025</td><td class="num rnd">5</td><td><span class="opp-link" onclick="showTeam('Real-Madrid')">Real Madrid</span></td>
-          <td class="loss num">L 87-94</td>
-          <td class="mu">Away</td><td class="num">5-10</td>
-        </tr><tr>
-          <td class="dc">17 Dec 2025</td><td class="num rnd">6</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
-          <td class="win num">W 85-73</td>
-          <td class="mu">Home</td><td class="num">6-10</td>
-        </tr><tr>
-          <td class="dc">19 Dec 2025</td><td class="num rnd">10</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
-          <td class="loss num">L 124-134</td>
-          <td class="mu">Away</td><td class="num">6-11</td>
-        </tr><tr>
-          <td class="dc">23 Dec 2025</td><td class="num rnd">2</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
-          <td class="loss num">L 81-91</td>
-          <td class="mu">Away</td><td class="num">6-12</td>
-        </tr><tr>
-          <td class="dc">02 Jan 2026</td><td class="num rnd">3</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
-          <td class="loss num">L 93-108</td>
-          <td class="mu">Home</td><td class="num">6-13</td>
-        </tr><tr>
-          <td class="dc">07 Jan 2026</td><td class="num rnd">15</td><td><span class="opp-link" onclick="showTeam('FC-Bayern-Munich')">FC Bayern Munich</span></td>
-          <td class="loss num">L 89-96</td>
-          <td class="mu">Away</td><td class="num">6-14</td>
-        </tr><tr>
-          <td class="dc">09 Jan 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('LDLC-ASVEL-Villeurbanne')">LDLC ASVEL Villeurbanne</span></td>
-          <td class="win num">W 78-73</td>
-          <td class="mu">Home</td><td class="num">7-14</td>
-        </tr><tr>
-          <td class="dc">15 Jan 2026</td><td class="num rnd">17</td><td><span class="opp-link" onclick="showTeam('Anadolu-Efes-Istanbul')">Anadolu Efes Istanbul</span></td>
-          <td class="win num">W 89-75</td>
-          <td class="mu">Away</td><td class="num">8-14</td>
-        </tr><tr>
-          <td class="dc">20 Jan 2026</td><td class="num rnd">9</td><td><span class="opp-link" onclick="showTeam('Panathinaikos-AKTOR-Athens')">Panathinaikos AKTOR Athens</span></td>
-          <td class="loss num">L 74-93</td>
-          <td class="mu">Away</td><td class="num">8-15</td>
-        </tr><tr>
-          <td class="dc">23 Jan 2026</td><td class="num rnd">3</td><td><span class="opp-link" onclick="showTeam('Fenerbahce-Beko-Istanbul')">Fenerbahce Beko Istanbul</span></td>
-          <td class="loss num">L 71-84</td>
-          <td class="mu">Away</td><td class="num">8-16</td>
-        </tr><tr>
-          <td class="dc">30 Jan 2026</td><td class="num rnd">4</td><td><span class="opp-link" onclick="showTeam('Zalgiris-Kaunas')">Zalgiris Kaunas</span></td>
-          <td class="win num">W 102-91</td>
-          <td class="mu">Home</td><td class="num">9-16</td>
-        </tr><tr>
-          <td class="dc">03 Feb 2026</td><td class="num rnd">12</td><td><span class="opp-link" onclick="showTeam('EA7-Emporio-Armani-Milan')">EA7 Emporio Armani Milan</span></td>
-          <td class="loss num">L 89-109</td>
-          <td class="mu">Away</td><td class="num">9-17</td>
-        </tr><tr>
-          <td class="dc">06 Feb 2026</td><td class="num rnd">10</td><td><span class="opp-link" onclick="showTeam('FC-Barcelona')">FC Barcelona</span></td>
-          <td class="loss num">L 91-97</td>
-          <td class="mu">Home</td><td class="num">9-18</td>
-        </tr><tr>
-          <td class="dc">13 Feb 2026</td><td class="num rnd">6</td><td><span class="opp-link" onclick="showTeam('AS-Monaco')">AS Monaco</span></td>
-          <td class="loss num">L 92-102</td>
-          <td class="mu">Away</td><td class="num">9-19</td>
-        </tr><tr>
-          <td class="dc">26 Feb 2026</td><td class="num rnd">2</td><td><span class="opp-link" onclick="showTeam('Valencia-Basket')">Valencia Basket</span></td>
-          <td class="loss num">L 79-108</td>
-          <td class="mu">Home</td><td class="num">9-20</td>
-        </tr><tr>
-          <td class="dc">06 Mar 2026</td><td class="num rnd">14</td><td><span class="opp-link" onclick="showTeam('Paris-Basketball')">Paris Basketball</span></td>
-          <td class="loss num">L 81-97</td>
-          <td class="mu">Home</td><td class="num">9-21</td>
-        </tr></tbody>
+            <tbody></tbody>
           </table></div>
         </div>
       </div>
@@ -2499,7 +2380,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 86-93</td>
           <td class="mu">Away</td><td class="num">2-2</td>
         </tr><tr>
-          <td class="dc">17 Oct 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">17 Oct 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 91-79</td>
           <td class="mu">Away</td><td class="num">3-2</td>
         </tr><tr>
@@ -2654,7 +2535,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 109-97</td>
           <td class="mu">Away</td><td class="num">7-2</td>
         </tr><tr>
-          <td class="dc">11 Nov 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">11 Nov 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 114-89</td>
           <td class="mu">Home</td><td class="num">8-2</td>
         </tr><tr>
@@ -2761,7 +2642,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 90-79</td>
           <td class="mu">Home</td><td class="num">2-1</td>
         </tr><tr>
-          <td class="dc">15 Oct 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">15 Oct 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 105-87</td>
           <td class="mu">Home</td><td class="num">3-1</td>
         </tr><tr>
@@ -2861,7 +2742,7 @@ tr:hover .tname{opacity:.75}
           <td class="win num">W 104-99</td>
           <td class="mu">Away</td><td class="num">10-18</td>
         </tr><tr>
-          <td class="dc">06 Mar 2026</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">06 Mar 2026</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="win num">W 97-81</td>
           <td class="mu">Away</td><td class="num">11-18</td>
         </tr><tr>
@@ -2912,7 +2793,7 @@ tr:hover .tname{opacity:.75}
           <td class="loss num">L 79-85</td>
           <td class="mu">Away</td><td class="num">3-3</td>
         </tr><tr>
-          <td class="dc">28 Oct 2025</td><td class="num rnd">20</td><td><span class="opp-link" onclick="showTeam('Kosner-Baskonia-Vitoria-Gasteiz')">Kosner Baskonia Vitoria-Gasteiz</span></td>
+          <td class="dc">28 Oct 2025</td><td class="num rnd">18</td><td><span class="opp-link" onclick="showTeam('Baskonia-Vitoria-Gasteiz')">Baskonia Vitoria-Gasteiz</span></td>
           <td class="loss num">L 85-92</td>
           <td class="mu">Away</td><td class="num">3-4</td>
         </tr><tr>
